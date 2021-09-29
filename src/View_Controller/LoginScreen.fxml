@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.LoginScreenController">
+   <children>
+      <Text fx:id="titleLabel" layoutX="164.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment Schedule">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameField" layoutX="184.0" layoutY="148.0" onKeyPressed="#nameFieldHandler" prefHeight="25.0" prefWidth="184.0" />
+      <Label fx:id="usernameLabel" layoutX="72.0" layoutY="148.0" text="User Name" />
+      <Label fx:id="passwordLabel" layoutX="72.0" layoutY="208.0" text="Password" />
+      <TextField fx:id="passwordField" layoutX="184.0" layoutY="208.0" onKeyPressed="#passwordFieldHandler" prefWidth="184.0" />
+      <Label fx:id="localDisplayLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="289.0" prefHeight="32.0" prefWidth="375.0" textAlignment="CENTER" />
+    <Button fx:id="loginBtn" layoutX="125.0" layoutY="353.0" mnemonicParsing="false" onMouseClicked="#loginBtnHandler" prefHeight="25.0" prefWidth="233.0" text="Log In" />
+      <Label fx:id="errorDisplayLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="415.0" prefHeight="32.0" prefWidth="375.0" textAlignment="CENTER" textFill="RED" />
+   </children>
+</AnchorPane>

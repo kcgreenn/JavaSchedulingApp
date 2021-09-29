@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.UpdateAppointmentController">
+   <children>
+      <Text layoutX="280.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update An Appointment">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label layoutX="14.0" layoutY="78.0" text="ID" />
+      <TextField fx:id="idField" disable="true" editable="false" layoutX="112.0" layoutY="78.0" prefHeight="25.0" prefWidth="218.0" text="Auto_Gen/Disabled" />
+      <Label layoutX="14.0" layoutY="128.0" text="Title" />
+      <Label layoutX="14.0" layoutY="228.0" text="Location" />
+      <Label layoutX="14.0" layoutY="178.0" text="Description" />
+      <Label layoutX="14.0" layoutY="278.0" text="Type" />
+      <TextField fx:id="titleField" layoutX="112.0" layoutY="128.0" prefHeight="25.0" prefWidth="218.0" />
+      <TextField fx:id="descField" layoutX="112.0" layoutY="178.0" prefHeight="25.0" prefWidth="218.0" />
+      <TextField fx:id="locationField" layoutX="112.0" layoutY="228.0" prefHeight="25.0" prefWidth="218.0" />
+      <TextField fx:id="typeField" layoutX="112.0" layoutY="278.0" prefHeight="25.0" prefWidth="218.0" />
+      <ComboBox fx:id="contactBox" layoutX="425.0" layoutY="196.0" onAction="#handleContactBox" prefHeight="25.0" prefWidth="218.0" promptText="Contact" />
+      <ComboBox fx:id="custBox" layoutX="425.0" layoutY="236.0" onAction="#handleCustBox" prefHeight="25.0" prefWidth="218.0" promptText="Customer" />
+      <Button fx:id="cancelBtn" layoutX="267.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#handleCancelClick" text="Cancel" />
+      <Button fx:id="createBtn" layoutX="375.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#handleCreateClick" text="Update" />
+      <Label fx:id="messageDisplayLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="326.0" prefHeight="41.0" prefWidth="272.0" textAlignment="CENTER" />
+      <Label layoutX="354.0" layoutY="111.0" text="Start" />
+      <DatePicker fx:id="startDatePicker" editable="false" layoutX="403.0" layoutY="111.0" onAction="#handleStartDatePick" prefHeight="25.0" prefWidth="99.0" />
+      <Label layoutX="354.0" layoutY="149.0" text="End" />
+      <DatePicker fx:id="endDatePicker" editable="false" layoutX="403.0" layoutY="149.0" onAction="#handleEndDatePick" prefHeight="25.0" prefWidth="99.0" />
+      <ComboBox fx:id="userBox" layoutX="425.0" layoutY="276.0" onAction="#handleUserBox" prefHeight="25.0" prefWidth="218.0" promptText="User" />
+      <Spinner fx:id="startHourSpinner" initialValue="12" layoutX="543.0" layoutY="111.0" max="24" min="0" prefHeight="25.0" prefWidth="52.0" />
+      <Spinner fx:id="startMinuteSpinner" amountToStepBy="5" layoutX="617.0" layoutY="111.0" max="55" min="0" prefHeight="25.0" prefWidth="52.0" />
+      <Spinner fx:id="endHourSpinner" initialValue="12" layoutX="543.0" layoutY="149.0" max="24" min="0" prefHeight="25.0" prefWidth="52.0" />
+      <Spinner fx:id="endMinuteSpinner" amountToStepBy="5" layoutX="617.0" layoutY="149.0" max="55" min="0" prefHeight="25.0" prefWidth="52.0" />
+      <Label layoutX="426.0" layoutY="78.0" text="Date" />
+      <Label layoutX="557.0" layoutY="78.0" text="Hour" />
+      <Label layoutX="622.0" layoutY="78.0" text="Minutes" />
+      <ProgressIndicator fx:id="progInd" layoutX="340.0" layoutY="379.0" opacity="0.0" progress="0.0" />
+   </children>
+</AnchorPane>
