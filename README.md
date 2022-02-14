@@ -11,4 +11,4 @@ Created with the following technologies:
 * JavaFX 12
 * MySQL
 
-How to Run the Program: Extract the zipped folder and open it in NetBeans, than press F6 or or click the Run tab and select Run.
+How to Run the Program: Extract the zipped folder and open it in NetBeans, than press F6 or click the Run tab and select Run.
