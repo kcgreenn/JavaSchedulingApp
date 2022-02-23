@@ -10,5 +10,6 @@ Created with the following technologies:
 * JDK 11
 * JavaFX 12
 * MySQL
+* JDBC
 
 How to Run the Program: Extract the zipped folder and open it in NetBeans, than press F6 or click the Run tab and select Run.
